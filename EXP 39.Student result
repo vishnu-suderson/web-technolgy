@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Portal</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <h1>Student Results</h1>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Grade</th>
+        </tr>
+        <tr><td>Math</td><td>85</td><td class="grade-A">A</td></tr>
+        <tr><td>Science</td><td>78</td><td class="grade-B">B</td></tr>
+        <tr><td>English</td><td>92</td><td class="grade-A">A</td></tr>
+        <tr><td>History</td><td>68</td><td class="grade-C">C</td></tr>
+        <tr><td>Geography</td><td>75</td><td class="grade-B">B</td></tr>
+    </table>
+    <div class="overall">
+        <p>Total Marks: 398/500 </p>
+<p>Grade: B</p>
+    </div>
+</body>
+</html>

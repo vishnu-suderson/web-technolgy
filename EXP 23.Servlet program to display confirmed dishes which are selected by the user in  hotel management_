@@ -1,0 +1,42 @@
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class ConfirmedDishesServlet extends HttpServlet {
+
+    private static final long serialVersionUID = 1L;
+    private List<String> confirmedDishes = new ArrayList<>();
+
+    // Assuming a method to add confirmed dishes (e.g., from a form submission)
+    public void addConfirmedDish(String dish) {
+        confirmedDishes.add(dish);
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html");
+
+        // Retrieve confirmed dishes from the list
+        List<String> confirmedDishes = getConfirmedDishes();
+
+        // Display the confirmed dishes in an HTML table
+        PrintWriter out = response.getWriter();
+        out.println("<table>");
+        out.println("<tr><th>Confirmed Dishes</th></tr>");
+        for (String dish : confirmedDishes) {
+            out.println("<tr><td>" + dish + "</td></tr>");
+        }
+        out.println("</table>");
+    }
+
+    // Method to retrieve confirmed dishes
+    public List<String> getConfirmedDishes() {
+        return confirmedDishes;
+    }
+}

@@ -1,0 +1,33 @@
+import java.io.*;
+import java.sql.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/EmployeeServlet")
+public class EmployeeServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+        
+        // Database connection
+        String jdbcUrl = "jdbc:mysql://localhost:3306/employeesdb";
+        String jdbcUser = "root", jdbcPassword = "password";
+        
+        try (Connection conn = DriverManager.getConnection(jdbcUrl, jdbcUser, jdbcPassword);
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery("SELECT * FROM employees")) {
+             
+            out.println("<html><body><h1>Employee Details</h1><table border='1'>");
+            out.println("<tr><th>ID</th><th>Name</th><th>Department</th><th>Position</th></tr>");
+            
+            // Display result
+            while (rs.next()) {
+                out.println("<tr><td>" + rs.getInt("id") + "</td><td>" + rs.getString("name") + "</td><td>" + rs.getString("department") + "</td><td>" + rs.getString("position") + "</td></tr>");
+            }
+            out.println("</table></body></html>");
+        } catch (Exception e) {
+            out.println("<h3>Error: " + e.getMessage() + "</h3>");
+        }
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Checklist</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		
+		.checklist {
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		h2 {
+			margin-top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="checklist">
+		<h2>Ordered Travel Checklist</h2>
+		<ol>
+			<li>Passport</li>
+			<li>Travel documents (visa, boarding pass, etc.)</li>
+			<li>Plane ticket</li>
+			<li>Hotel reservation</li>
+			<li>Travel adapter</li>
+			<li>Phone charger</li>
+			<li>Laptop and charger (if necessary)</li>
+			<li>Clothing:
+				<ul>
+					<li>Socks</li>
+					<li>Underwear</li>
+					<li>Shirts</li>
+					<li>Pants</li>
+					<li>Jacket</li>
+				</ul>
+			</li>
+			<li>Toiletries:
+				<ul>
+					<li>Toothbrush</li>
+					<li>Toothpaste</li>
+					<li>Deodorant</li>
+					<li>Shampoo</li>
+					<li>Conditioner</li>
+				</ul>
+			</li>
+			<li>Medications</li>
+		</ol>
+	</div>
+	
+	<div class="checklist">
+		<h2>Unordered Travel Essentials</h2>
+		<ul>
+			<li>Snacks (e.g., energy bars, nuts)</li>
+			<li>Water bottle</li>
+			<li>First-aid kit</li>
+			<li>Travel pillow</li>
+			<li>Earplugs</li>
+			<li>Eye mask</li>
+			<li>Reading material or entertainment (e.g., book, tablet)</li>
+			<li>Map or guidebook</li>
+			<li>Money and credit cards</li>
+			<li>Travel insurance information</li>
+		</ul>
+	</div>
+</body>
+</html>

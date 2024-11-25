@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Positioning Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .box1 {
+            width: 300px;
+            height: 200px;
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            float: left;
+            margin-right: -150px; /* Move left element over right element */
+        }
+
+        .box2 {
+            width: 300px;
+            height: 200px;
+            background-color: #4682b4;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Element 1</div>
+        <div class="box2">Element 2</div>
+    </div>
+</body>
+</html>

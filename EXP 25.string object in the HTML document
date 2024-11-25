@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Object Methods</title>
+</head>
+<body>
+    <script>
+        // Create a string
+        let str = "Hello, World!";
+
+        // 1. Returning the character at a specified location
+        let charAt3 = str.charAt(3);
+        console.log("Character at index 3:", charAt3);
+
+        // 2. Returns the unicode of the character at the specified index
+        let charCodeAt3 = str.charCodeAt(3);
+        console.log("Unicode of character at index 3:", charCodeAt3);
+
+        // 3. Joins two or more strings and returns a new joined string
+        let joinedString = str.concat(" How are you?");
+        console.log("Joined string:", joinedString);
+
+        // 4. Converts unicode value to string
+        let unicodeToString = String.fromCharCode(65);
+        console.log("Unicode 65 to string:", unicodeToString);
+
+        // 5. Converts a string to uppercase letters
+        let uppercaseStr = str.toUpperCase();
+        console.log("Uppercase string:", uppercaseStr);
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Menu Card</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu-card {
+            border: 1px solid black;
+            padding: 20px;
+            margin: 20px auto;
+            width: 800px;
+        }
+        .menu-header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-card">
+        <h2 class="menu-header">Our Menu</h2>
+        <ol>
+            <li class="menu-item">
+                <h4>Appetizers</h4>
+                <ul>
+                    <li>Garlic Bread</li>
+                    <li>Bruschetta</li>
+                    <li>Chicken Wings</li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <h4>Main Courses</h4>
+                <ul>
+                    <li>Pasta with Tomato Sauce</li>
+                    <li>Grilled Chicken</li>
+                    <li>Fish and Chips</li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <h4>Desserts</h4>
+                <ul>
+                    <li>Chocolate Brownie</li>
+                    <li>Ice Cream Sundae</li>
+                    <li>Apple Pie</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

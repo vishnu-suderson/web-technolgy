@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Simple Arithmetic Operations</title>
+    <script>
+        function performOperations() {
+            var num1 = 8;
+            var num2 = 4;
+
+            var sum = num1 + num2;
+            var difference = num1 - num2;
+            var product = num1 * num2;
+            var quotient = num1 / num2;
+
+            alert("Sum: " + sum);
+            alert("Difference: " + difference);
+            alert("Product: " + product);
+            alert("Quotient: " + quotient);
+        }
+    </script>
+</head>
+<body>
+    <h1>Arithmetic Operations</h1>
+    <button onclick="performOperations()">Perform Operations</button>
+</body>
+</html>

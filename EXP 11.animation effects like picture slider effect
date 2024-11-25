@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Slider with Radio Buttons</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .slider-container {
+            width: 500px;
+            position: relative;
+        }
+        .slider-container img {
+            width: 100%;
+            display: none;
+        }
+        .slider-container img.active {
+            display: block;
+            transition: opacity 1s ease-in-out;
+        }
+        .radio-buttons {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .radio-buttons input {
+            margin: 0 10px;
+        }
+        /* Style for radio buttons */
+        input[type="radio"] {
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            border: 2px solid #aaa;
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+        }
+        input[type="radio"]:checked {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <img src="https://via.placeholder.com/500x300/FF0000/FFFFFF?text=Image+1" alt="Image 1" class="active" id="img1">
+        <img src="https://via.placeholder.com/500x300/00FF00/FFFFFF?text=Image+2" alt="Image 2" id="img2">
+        <img src="https://via.placeholder.com/500x300/0000FF/FFFFFF?text=Image+3" alt="Image 3" id="img3">
+        <img src="https://via.placeholder.com/500x300/FFFF00/FFFFFF?text=Image+4" alt="Image 4" id="img4">
+    </div>
+
+    <div class="radio-buttons">
+        <input type="radio" name="slider" id="radio1" checked>
+        <input type="radio" name="slider" id="radio2">
+        <input type="radio" name="slider" id="radio3">
+        <input type="radio" name="slider" id="radio4">
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.slider-container img');
+        const radioButtons = document.querySelectorAll('.radio-buttons input');
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.classList.remove('active');
+                if (i === index) {
+                    img.classList.add('active');
+                }
+            });
+        }
+
+        radioButtons.forEach((radio, index) => {
+            radio.addEventListener('change', () => {
+                showImage(index);
+            });
+        });
+    </script>
+</body>
+</html>

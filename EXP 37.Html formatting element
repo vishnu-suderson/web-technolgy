@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Special Text Formatting</title>
+</head>
+<body>
+  <h1>Special Text Formatting</h1>
+
+  <h2>Emphasized Text</h2>
+  <p>This is an <em>emphasized</em> text.</p>
+
+  <h2>Marked Text</h2>
+  <p>This is <mark>marked</mark> text.</p>
+
+  <h2>Inserted Text</h2>
+  <p>This is <ins>inserted</ins> text.</p>
+
+  <h2>Subscript and Superscript Text</h2>
+  <p>H<sub>2</sub>O is the formula for water.</p>
+  <p>2<sup>3</sup> is equal to 8.</p>
+
+  <h2>Deleted Text</h2>
+  <p>This text <del>should be deleted</del>.</p>
+
+  <h2>Bold and Italic Text</h2>
+  <p>This is <b>bold</b> text.</p>
+  <p>This is <i>italic</i> text.</p>
+  <p>This is <b><i>bold and italic</i></b> text.</p>
+</body>
+</html>

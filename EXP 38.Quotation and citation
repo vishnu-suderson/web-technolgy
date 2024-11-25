@@ -1,0 +1,34 @@
+Here's a simplified version:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Checklist</title>
+</head>
+<body>
+
+<h2>Ordered Checklist</h2>
+<ol>
+	<li>Passport</li>
+	<li>Tickets</li>
+	<li>Travel adapter</li>
+	<li>Clothing</li>
+	<li>Toiletries</li>
+	<li>Medications</li>
+</ol>
+
+<h2>Unordered Essentials</h2>
+<ul>
+	<li>Snacks</li>
+	<li>Water bottle</li>
+	<li>First-aid kit</li>
+	<li>Travel pillow</li>
+	<li>Money/credit cards</li>
+</ul>
+
+</body>
+</html>
+
+
+This code still displays two lists but with fewer items and less styling.

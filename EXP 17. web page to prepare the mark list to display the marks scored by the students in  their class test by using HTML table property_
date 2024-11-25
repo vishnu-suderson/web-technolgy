@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark List Table</title>
+</head>
+<body>
+    <h1>Mark List</h1>
+    <table border="1">
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Chemistry</td>
+            <td>85</td>
+        </tr>
+    </table>
+</body>
+</html>
